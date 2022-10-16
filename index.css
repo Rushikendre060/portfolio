@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+.infoContainer {
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.DevInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    width: 78vh;
+}
+
+.Hello {
+    font-size: 60px;
+}
+
+.name {
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.about {
+    font-size: 40px;
+}
+
+.moreAbout {
+    font-family: 'Bebas Neue', cursive;
+    /* margin-top: 23px; */
+    font-size: 30px;
+}
+
+.moreAbout h1 {
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 20px;
+    color: white;
+    background-color: blueviolet;
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 7px 10px;
+    margin: 10px 0px;
+    margin-left: 245px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.contactform {
+    padding: 0 34px;
+    padding-top: 5px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 245px;
+
+}
+
+.contactform h1 {
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px;
+    margin-left: 30px;
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 45px;
+}
+
+.contactform form div input {
+    width: 16vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 8px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check-input {
+    width: 24px;
+    margin: 4px 0;
+}
+
+.blogitem {
+    margin: 20px;
+
+    font-family: 'Bebas Neue', cursive;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 245px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.intro h2 {
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 245px;
+    padding: 10px;
+}
+
+.intro p {
+    font-family: 'Source Code Pro', monospace;
+    margin-left: 10px;
+    padding: 10px;
+
+}
+
+.intro h3 {
+    margin-left: 245px;
+}
+
+.hundred {
+    width: 250px;
+    color: rgb(199, 75, 230);
+}
+
+.fifty {
+    width: 150px;
+    color: aqua;
+}
+
+.twentyfive {
+    width: 1250px;
+    color: rgb(27, 132, 253);
+}
+
+.t5 {
+    width: 75px;
+    background-color: yellow;
+}
+
+.skillcontainer {
+    padding: 12px;
+    margin-left: 240px;
+}
+
+.skillfifty {
+    width: 24px;
+    height: 6px;
+    background-color: aqua;
+    border: 1px saddlebrown;
+}
+
+.skilljava {
+    width: 180px;
+    height: 6px;
+    background-color: rgb(0, 255, 64);
+    border: 1px saddlebrown;
+}
+
+.skill {
+    width: 275px;
+    height: 6px;
+    background-color: red;
+    border: 1px saddlebrown;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .infoContainer {
+        /* border: 2px solid red; */
+
+        height: 60vh;
+        width: 95%;
+        margin: 144px auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 2.5%;
+    }
+
+    .DevInfo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Source Code Pro', monospace;
+        width: 96%;
+        margin-left: 2%;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* margin-top: 34px; */
+        margin-left: -4.5%;
+    }
+
+    .DevPic {
+        /* border: solid 2px green; */
+        margin-left: 1%;
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .infoContainer {
+
+        /* height: 60vh; */
+        width: 70%;
+        margin: 144px auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* margin-left: 25%; */
+    }
+
+    .DevInfo {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Source Code Pro', monospace;
+        width: 90%;
+    }
+}
+
+
+
+.moreAbout {
+
+    margin-left: 245px;
+    border: solid 2px green;
+}
+
+.moreAbout p {
+    margin-left: 245px;
+}
+
+.main {
+    height: 86vh;
+}
+
+.container {
+    display: flex;
+}
+
+/* .infoContainer {
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+
+} */
+
+.skill t5 {
+    width: 275px;
+    height: 6px;
+    background-color: rgba(61, 87, 105, 0.425)(255, 174, 0);
+    border: 1px saddlebrown;
+
+}
+
+.blogContainer {
+    /* border: solid 2px red; */
+    margin-left: 15%;
+
+}
+
+.hundred {
+    width: 250px;
+    color: rgb(199, 75, 230);
+}
+
+.fifty {
+    width: 150px;
+    color: aqua;
+}
+
+.twentyfive {
+    width: 1250px;
+    color: rgb(27, 132, 253);
+}
+
+.t5 {
+    width: 75px;
+    background-color: yellow;
+}
+
+/* .blogMain{
+    margin-left: 20%;
+} */
